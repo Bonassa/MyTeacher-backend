@@ -45,6 +45,11 @@ Para instalar as bibliotecas no python é usado o pip, gerenciador de pacotes do
   pip install django-cors-headers
 ```
 
+- Instalação do Dotenv
+```
+  pip install python-dotenv
+```
+
 ## Banco de dados
 O Django por padrão usa o banco de dados SQLite3
 Para criar e executar uma migration é usado os comandos
@@ -58,6 +63,13 @@ Para converter o banco de dados em JSON, é utilizado serializers, criando dentr
 
 ## Configurando o CORS
 CORS (Cross-origin Resource Sharing) é responsável por permitir que o front-end se comunique com o back-end, por padrão é realizado o bloqueio de qualquer requisição que seja feita de uma origin diferente da qual está rodando o servidor
+
+## Instalação do DOTENV
+Para proteger as keys do projeto, neste caso apenas a secret key do Django, iremos utilizar variaveis de ambiente.
+
+Como este projeto não está em produção, a SECRET_KEY do Django é
+
+`SECRET_KEY = 'django-insecure-&kr4zww^p3)z$n26#onkqp&pmknn00jrx2*i77$_j2h(r06o6k'`
 
 ## Execução do projeto
 - Este projeto foi criado utilizando virtualenv para controlar as versões das dependências, caso algum pacote seja adicionado, execute o comando abaixo para atualizar o requirements.txt
